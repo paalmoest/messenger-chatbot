@@ -1,0 +1,22 @@
+{
+  "name": "chatbot",
+  "version": "1.0.0",
+  "author" : "Fredrik Lillejordet",
+  "description": "Chatbot",
+  "private": true,
+  "main": "app.js",
+  "scripts": {
+  	"start": "node app.js"
+  },
+  "dependencies": {
+  	"body-parser" : "*",
+  	"express" : "*",
+    "request" : "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author":  "",
+  "license": "ISC"
+}

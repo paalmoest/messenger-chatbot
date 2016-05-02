@@ -1,0 +1,35 @@
+body {
+    background-color: #EDEDED;
+    font-family: 'Merriweather', serif;
+    font-weight: 100;
+    margin: 0px;
+    padding: 0px;
+}
+
+#header {
+    background-color: #2F5DDE;
+    color: #FFF;
+    text-align:center;
+    width: 100%;
+    height: 80px;
+    display: inline;
+    float: left;
+}
+
+#content {
+    background-color: #FAFAFA;
+    padding: 90px 20px 20px 20px;
+    width:90%;
+    margin: 0 auto;
+    box-shadow: 5px 5px 5px #E8E8E8;
+
+}
+
+#content a {
+    color: #33C494;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+}
