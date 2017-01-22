@@ -27,7 +27,7 @@ router.post('/webhook', function(req, res) {
             var message = event.message.text;
             console.log("Message received: " + message.substring(0, 200));
             var responseMessage = parseMessage(message);
-            sendTextMessage(sender, resonseMessage);
+            sendTextMessage(sender, responseMessage);
         }
     }
     res.sendStatus(200);
