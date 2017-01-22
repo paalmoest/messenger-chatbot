@@ -10,7 +10,7 @@ function parseMessage(message) {
 
 var facebook_verify_token = process.env.CHATBOT_FACEBOOK_VERIFY_TOKEN;
 var facebook_access_token = process.env.CHATBOT_FACEBOOK_ACCESS_TOKEN;
-
+var facebook_page_access_token = process.env.CHATBOT_FACEBOOK_PAGE_ACCESS_TOKEN;
 router.get('/webhook', function(req, res) {
     if (req.query['hub.verify_token'] === facebook_verify_token) {
         res.send(req.query['hub.challenge']);
@@ -39,7 +39,7 @@ function sendTextMessage(sender, text) {
     }
     request({
         url: 'https://graph.facebook.com/v2.6/me/messages',
-        qs: { access_token: token },
+        qs: { access_token: facebook_page_access_token },
         method: 'POST',
         json: {
             recipient: { id: sender },
